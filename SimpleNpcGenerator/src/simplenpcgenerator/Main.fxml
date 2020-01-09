@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simplenpcgenerator.MainController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="640.0">
+         <children>
+            <AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="111.0" prefHeight="220.0" prefWidth="482.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="220.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="482.0" />
+                        <Text layoutX="14.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To generate a Simple NPC:" wrappingWidth="358.21484375">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1: Select the desired gender for your Simple NPC. (Must select one)" wrappingWidth="463.00001442432404">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="14.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2: Select the traits you would like to generate for your Simple NPC." wrappingWidth="463.000001385808">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="14.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Select Submit to generate your NPC. Select Reset to clear all fields to default." wrappingWidth="463.00001721829176">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="14.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note: Simple NPC Name is optional." wrappingWidth="358.21484375">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text layoutX="163.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simple NPC Generator">
+                     <font>
+                        <Font name="System Bold" size="64.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="14.0" layoutY="355.0" prefHeight="220.0" prefWidth="482.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="220.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="482.0" />
+                        <AnchorPane layoutX="3.0" layoutY="3.0" prefHeight="77.0" prefWidth="475.0">
+                           <children>
+                              <RadioButton fx:id="randomRadioButton" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" selected="true" text="Random" />
+                              <RadioButton fx:id="noneRadioButton" layoutX="115.0" layoutY="39.0" mnemonicParsing="false" text="None" />
+                              <RadioButton fx:id="maleRadioButton" layoutX="407.0" layoutY="40.0" mnemonicParsing="false" text="Male" />
+                              <RadioButton fx:id="femaleRadioButton" layoutX="310.0" layoutY="40.0" mnemonicParsing="false" text="Female" />
+                              <RadioButton fx:id="otherRadioButton" layoutX="212.0" layoutY="40.0" mnemonicParsing="false" text="Other" />
+                              <Text layoutX="6.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender (Must select one)" wrappingWidth="463.0000200122595">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="-1.0" layoutY="74.0" prefHeight="146.0" prefWidth="482.0">
+                           <children>
+                              <Text layoutX="7.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Traits (Select all that apply)" wrappingWidth="358.21484375">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <CheckBox fx:id="skinColorCheckBox" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" selected="true" text="Skin Color" />
+                              <CheckBox fx:id="hairColorCheckBox" layoutX="243.0" layoutY="48.0" mnemonicParsing="false" selected="true" text="Hair Color" />
+                              <CheckBox fx:id="heightCheckBox" layoutX="14.0" layoutY="99.0" mnemonicParsing="false" selected="true" text="Height" />
+                              <CheckBox fx:id="eyeColorCheckBox" layoutX="126.0" layoutY="48.0" mnemonicParsing="false" selected="true" text="Eye Color" />
+                              <CheckBox fx:id="personalityCheckBox" layoutX="243.0" layoutY="99.0" mnemonicParsing="false" selected="true" text="Personality" />
+                              <CheckBox fx:id="hairLengthCheckBox" layoutX="365.0" layoutY="48.0" mnemonicParsing="false" selected="true" text="Hair Length" />
+                              <CheckBox fx:id="bodyTypeCheckBox" layoutX="124.0" layoutY="99.0" mnemonicParsing="false" selected="true" text="Body Type" />
+                              <CheckBox fx:id="wealthCheckBox" layoutX="365.0" layoutY="99.0" mnemonicParsing="false" selected="true" text="Wealth" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="523.0" layoutY="111.0" prefHeight="465.0" prefWidth="463.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="465.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="463.0" />
+                        <TextField fx:id="simpleNameTextField" layoutX="15.0" layoutY="18.0" onAction="#submitButtonPushed" prefHeight="25.0" prefWidth="297.0" promptText="Enter Simple NPC Name (optional)">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </TextField>
+                        <ButtonBar layoutX="231.0" layoutY="411.0" prefHeight="40.0" prefWidth="200.0">
+                           <buttons>
+                              <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetButtonPushed" text="Reset" />
+                              <Button fx:id="submitButton" mnemonicParsing="false" onAction="#submitButtonPushed" text="Submit" />
+                           </buttons>
+                        </ButtonBar>
+                        <AnchorPane layoutX="17.0" layoutY="90.0" prefHeight="303.0" prefWidth="430.0">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bcc0c3" height="312.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="430.0" />
+                              <AnchorPane layoutX="7.0" layoutY="-1.0" prefHeight="310.0" prefWidth="111.0">
+                                 <children>
+                                    <Label fx:id="genderLabel" prefHeight="27.0" prefWidth="422.0" text="Gender">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="skinColorLabel" layoutY="35.0" prefHeight="27.0" prefWidth="422.0" text="Skin Color">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="eyeColorLabel" layoutY="70.0" prefHeight="27.0" prefWidth="422.0" text="Eye Color">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="hairColorLabel" layoutY="105.0" prefHeight="27.0" prefWidth="422.0" text="Hair Color">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="hairLengthLabel" layoutY="140.0" prefHeight="27.0" prefWidth="422.0" text="Hair Length">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="heightLabel" layoutY="175.0" prefHeight="27.0" prefWidth="422.0" text="Height">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="bodyTypeLabel" layoutY="210.0" prefHeight="27.0" prefWidth="422.0" text="Body Type">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="personalityLabel" layoutY="245.0" prefHeight="27.0" prefWidth="422.0" text="Personality">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="wealthLabel" layoutY="280.0" prefHeight="27.0" prefWidth="422.0" text="Wealth">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="simpleNameLabel" layoutX="17.0" layoutY="52.0" prefHeight="25.0" prefWidth="430.0" text="Simple NPC Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
